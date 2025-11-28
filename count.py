@@ -14,8 +14,11 @@ class Counter:
         self.label.config(text=self.num)
 
 window = Tk()
-window.title("Hello World!")
+window.title("Counter")
 window.config(background="grey")
+
+icon = PhotoImage(file="logo.png")
+window.iconphoto(True,icon)
 
 text = Label(window, text="0", font=("Arial", 30, "bold"), bg='grey')
 text.pack()
